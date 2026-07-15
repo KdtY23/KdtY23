@@ -74,14 +74,6 @@ Currently working on improving my understanding of:
 
 ---
 
-## 📈 My Learning Philosophy
-
-> "Technology keeps evolving, so engineers must keep learning."
-
-I believe software engineering is a continuous process of improving knowledge, solving problems, and building better systems.
-
----
-
 ## 📫 Connect With Me
 
 GitHub: Adityo
