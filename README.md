@@ -4,12 +4,6 @@
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=KdtY23&show_icons=true&theme=tokyonight" />
 </p>
 
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KdtY23&show_icons=true&rank_icon=github&theme=tokyonight" />
-</p>
-
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=KdtY23&theme=tokyonight" />
 </p>
