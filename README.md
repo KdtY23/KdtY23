@@ -1,16 +1,114 @@
-## Hi there 👋
+## 📊 GitHub Stats
 
-<!--
-**KdtY23/KdtY23** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=KdtY23&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KdtY23&layout=compact&theme=tokyonight" alt="Top Languages" />
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=KdtY23&show_icons=true&rank_icon=github&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KdtY23&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KdtY23&layout=compact&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KdtY23&theme=tokyonight" alt="GitHub Streak" />
+</p>
+
+
+
+# Hi, I'm Adityo 👋
+
+```text
+Informatics Student
+Backend Developer Enthusiast
+Future DevOps Engineer
+```
+
+I am an Informatics student at **Institut Teknologi Kalimantan** who is interested in building reliable software systems, backend development, automation, and cloud technologies.
+
+Currently, I am focusing on improving my skills in software engineering by building projects, learning system design, and understanding how applications work behind the scenes.
+
+---
+
+## 🚀 About Me
+
+* 🎓 Informatics Student at Institut Teknologi Kalimantan
+* 💻 Interested in Backend Development, DevOps, and Cloud Engineering
+* 🐍 Currently learning Python, JavaScript, and backend technologies
+* 🗄️ Interested in database design and building data-driven applications
+* ⚙️ Enjoy creating automation tools and practical software projects
+* 🐧 Interested in Linux-based development environments
+* 📚 Believe that continuous learning is the foundation of engineering
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming Languages
+
+* Python
+* JavaScript / TypeScript
+
+### Backend & Database
+
+* Node.js
+* REST API
+* SQLite
+* MongoDB
+* Database Design
+
+### Tools & Environment
+
+* Git & GitHub
+* VS Code
+* Linux
+* Docker (Learning)
+* Cloud Platforms (Learning)
+
+---
+
+## 📌 Current Focus
+
+Currently working on improving my understanding of:
+
+* Backend architecture
+* API development
+* Database management
+* Automation scripting
+* DevOps workflow
+* Cloud infrastructure
+
+---
+
+## 📈 My Learning Philosophy
+
+> "Technology keeps evolving, so engineers must keep learning."
+
+I believe software engineering is a continuous process of improving knowledge, solving problems, and building better systems.
+
+---
+
+## 📫 Connect With Me
+
+GitHub: Adityo
+
+<p align="left">
+  <a href="https://instagram.com/adit.hdaa">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+
+---
+
+⭐ Thanks for visiting my profile!
