@@ -46,10 +46,10 @@ Currently, I am focusing on improving my skills in software engineering by build
 ### Backend & Database
 
 * Node.js
-* REST API
+* REST API (Learning)
 * SQLite
-* MongoDB
-* Database Design
+* MongoDB (Learning)
+* Database Design (Learning)
 
 ### Tools & Environment
 
