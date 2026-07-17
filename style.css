@@ -1,0 +1,283 @@
+/*
+  Portfolio Sederhana - style.css
+  Tujuan: tampilan bersih, responsif, dan gampang dimodifikasi.
+
+  Cara modifikasi cepat:
+  1) Ubah variabel warna di bagian :root
+  2) Ubah isi font/ukuran di badan style
+  3) Tambahkan project card/skill card di HTML, styling-nya sudah disiapkan
+*/
+
+:root {
+  /* UBAH warna utama di sini */
+  --bg: #000000;
+  --card: #3a3a46;
+  --text: #e6edf7;
+  --muted: #878a8e;
+  --primary: #96a1b3;
+  --primary-2: #555353;
+  --border: rgba(255, 255, 255, 0.12);
+
+  /* UBAH radius & spacing bila perlu */
+  --radius: 19px;
+  --section-gap: 59px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(900px circle at 20% 0%, rgba(61, 65, 71, 0.15), transparent 40%),
+    radial-gradient(900px circle at 90% 30%, rgba(0, 0, 0, 0.15), transparent 45%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+}
+
+/* Header & Nav */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.65);
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+nav .brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+nav h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+nav .links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Hero */
+.hero {
+  padding: 46px 0 var(--section-gap);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kicker {
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.btn.primary {
+  border-color: rgba(110, 168, 254, 0.5);
+  background: linear-gradient(180deg, rgba(110, 168, 254, 0.2), rgba(110, 168, 254, 0.05));
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  transition: 150ms ease;
+  text-decoration: none;
+}
+
+/* Card */
+.card {
+  border: 1px solid var(--border);
+  background: rgba(18, 27, 46, 0.7);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+/* Sections */
+section {
+  padding: var(--section-gap) 0;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.section-subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+/* Skills */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Projects */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  display: grid;
+  gap: 10px;
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.project p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.project .meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 16px;
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+label {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--text);
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  border-color: rgba(110, 168, 254, 0.6);
+}
+
+.footer {
+  padding: 26px 0 40px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+

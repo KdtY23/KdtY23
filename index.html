@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LINK ke stylesheet. Kalau mau ganti CSS, edit file style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Judul tab browser. Ubah teks ini sesuai nama kamu -->
+  <title>Welcome To My Website</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <!-- Nama brand/website kamu -->
+      <h1 class="brand">Coredump</h1>
+
+      <!--
+        Link navigasi:
+        - href="#about" artinya akan scroll ke section yang punya id="about"
+        - Kalau kamu ganti id section, jangan lupa ikut update href.
+      -->
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO (tampilan pembuka) -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <!--
+              Kicker: teks kecil di atas judul.
+            -->
+            <div class="kicker">Junior fullstack Developer</div>
+
+            <!-- Judul besar.-->
+            <h2>
+              Hi, I’m <span class="gradient-text">Adityo</span>
+              <br>
+              I Am a Junior Developer
+            </h2>
+
+            <!-- Deskripsi singkat.-->
+            <p>
+              Saya adalah mahasiswa yang sedang belajar pemrograman web. 
+
+            <!-- Tombol aksi. -->
+            <div class="btn-row">
+              <a class="btn primary" href="#project">
+                <!-- Catatan: ini anchor biasa, tidak butuh JavaScript -->
+                Lihat Project
+              </a>
+              <a class="btn" href="#contact">Hubungi Saya</a>
+            </div>
+          </div>
+
+          <!-- Card samping untuk info singkat -->
+          <div class="card">
+            <h3 class="section-title" style="margin:0 0 10px; font-size:18px;">Quick Info</h3>
+            <p style="margin:0; color: var(--muted);">
+              • Lokasi: Indonesia
+              <br>
+              • Fokus: HTML/CSS/JS + latihan proyek
+              <br>
+              • Goals: gol pokoknya
+            </p>
+
+            <!--
+              Cara modifikasi:
+              - Ubah teks bullet sesuai data kamu.
+              - Kamu bisa tambah baris menggunakan <br>.
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-subtitle">
+         
+        </p>
+
+        <div class="card">
+          <!-- Ganti paragraf berikut dengan versi kamu -->
+          <p style="margin:0; color: var(--muted);">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+ 
+
+        <div class="pill-row">
+          <!--
+            Untuk menambah skill:
+            - duplikasi baris <span class="pill">Nama Skill</span>
+            - ganti teksnya
+          -->
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript (Basic)</span>
+          <span class="pill">Git/GitHub</span>
+          <span class="pill">Responsive Layout</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project" aria-label="Project">
+      <div class="container">
+        <h2 class="section-title">Project</h2>
+      
+
+        <div class="grid-3">
+          <!-- Project Card 1 -->
+          <div class="card project">
+            <h3>Portfolio Mini</h3>
+            <p>Website sederhana untuk latihan layout dan styling.</p>
+            <div class="meta">Tech: HTML + CSS</div>
+            <!--
+              Kalau punya link live/demo, ubah <a> di bawah:
+              - isi href="https://..."
+              - atau ganti teks jadi "GitHub".
+            -->
+            <div style="margin-top:6px;">
+              <a class="btn" href="#" style="padding:10px 12px;">Demo/Link</a>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="card project">
+            <h3>To-do List</h3>
+            <p>Latihan JS untuk manipulasi data sederhana.</p>
+            <div class="meta">Tech: JavaScript</div>
+            <div style="margin-top:6px;">
+              <a class="btn" href="#" style="padding:10px 12px;">Demo/Link</a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="card project">
+            <h3>Landing Page</h3>
+            <p>Latihan struktur section + responsive design.</p>
+            <div class="meta">Tech: HTML + CSS</div>
+            <div style="margin-top:6px;">
+              <a class="btn" href="#" style="padding:10px 12px;">Demo/Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          Cara menambah project card:
+          - copy salah satu div "card project" dan tempel lagi di dalam "grid-3".
+          - Kalau jumlah card banyak, grid akan tetap responsif.
+        -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Tulis form simple ini atau ganti dengan link sosial.</p>
+
+        <div class="contact-grid">
+          <div>
+            <form onsubmit="return false;">
+              <!--
+                Catatan untuk pemula:
+                - onsubmit="return false;" supaya form tidak refresh page.
+                - Nantinya bisa kamu ganti dengan backend/EmailJS.
+              -->
+
+              <div class="field">
+                <label for="name">Nama</label>
+                <input id="name" type="text" placeholder="Nama kamu" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email@example.com" required>
+              </div>
+
+              <div class="field">
+                <label for="message">Pesan</label>
+                <textarea id="message" placeholder="Tulis pesan..." required></textarea>
+              </div>
+
+              <button class="btn primary" type="submit" style="cursor:pointer; border: none;">Kirim</button>
+
+              <!-- Kamu bisa menghapus button/ubah jadi link jika tidak pakai form -->
+            </form>
+          </div>
+
+          <div class="card">
+            <h3 class="section-title" style="margin:0 0 10px; font-size:18px;">Social</h3>
+            <p style="margin:0; color: var(--muted);">
+              <b>GitHub:</b>
+              <a href="#" target="_blank" rel="noreferrer">-</a>
+              <br>
+              <b>LinkedIn:</b>
+              <a href="#" target="_blank" rel="noreferrer">-</a>
+              <br>
+              <b>Email:</b>
+              <a href="mailto:email@example.com">-</a>
+            </p>
+
+            <!--
+              Modifikasi:
+              - ganti href="#" menjadi link asli profil kamu.
+              - ganti teks github/username dll.
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p style="margin:0;">© <span id="year">2026</span> Adityo.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Script minimal untuk auto-update tahun (opsional) -->
+  <script>
+    // Panduan modifikasi:
+    // - Kalau tidak ingin auto tahun, hapus blok script ini.
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
