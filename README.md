@@ -58,6 +58,8 @@ Currently, I am focusing on improving my skills in software engineering by build
 * Linux
 * Docker (Learning)
 * Cloud Platforms (Learning)
+* Devin IDE
+* PgAdmin 4
 
 ---
 
